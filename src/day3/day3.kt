@@ -7,7 +7,7 @@ data class Claim(val id: Int, val atX: Int, val atY: Int, val width: Int, val he
 }
 
 fun main(args: Array<String>) {
-    val input = File("input.txt").useLines { it.toList() }
+    val input = File("test.txt").useLines { it.toList() }
     val regex = Regex("^#(\\d+) @ (\\d+),(\\d+): (\\d+)x(\\d+)$")
     val claims = input.map {
         val res = regex.matchEntire(it)?.groupValues
@@ -19,24 +19,61 @@ fun main(args: Array<String>) {
         }
     }
 
-    val firstRound = intersections(claims.mapNotNull { it?.toRectangel() })
-    val secondRound = intersections(firstRound)
+    val sparseTable = HashMap<Int, HashMap<Int, Int>>()
 
-    val firstRoundArea = firstRound.map { it.area() }.sum()
-    val secondRoundArea = secondRound.map { it.area() }.sum()
-    print("Part 1: ")
-    println(firstRoundArea - secondRoundArea)
-}
+    for (claim in claims.filterNotNull()) {
+        for (x in claim.atX until (claim.atX + claim.width)) {
+            val row = sparseTable.getOrDefault(x, HashMap())
+            for (y in claim.atY until (claim.atY + claim.height)) {
+                val oldValue = row.getOrDefault(y, 0)
+                row[y] = oldValue + 1
+            }
+            sparseTable[x] = row
+        }
+    }
 
-fun intersections(search: List<Rectangle>): List<Rectangle> {
-    val output = mutableListOf<Rectangle>()
-    for ((ndx, rect1) in search.withIndex()) {
-        for (rect2 in search.subList(ndx + 1, search.size)) {
-            val intersect = rect1.intersection(rect2)
-            if (intersect != null) {
-                output.add(intersect)
+    var count = 0
+    for (row in sparseTable) {
+        for (column in row.value) {
+            if (column.value > 1) {
+                count++
             }
         }
     }
-    return output
+
+    print("Day 1: ")
+    println(count)
+
+    print("Day 2: ")
+    val rects = claims.filterNotNull().map { it.toRectangel() }.toMutableList()
+    val intersected = mutableListOf<Rectangle>();
+
+    for (rect in rects) {
+        if (rect in intersected) {
+            continue
+        }
+        for (rect2 in rects) {
+            if (rect == rect2) {
+                continue
+            }
+            if (rect2 in intersected) {
+                continue
+            }
+            if (rect.intersection(rect2) == null) {
+                intersected.add(rect)
+                intersected.add(rect2)
+            }
+        }
+    }
+
+    val notIntersected = rects.find { it !in intersected }
+
+    if (notIntersected != null) {
+        println(claims.filterNotNull().find {
+            it.atX == notIntersected.topLeft.x
+                    && it.atY == notIntersected.topLeft.y
+                    && it.atX + it.width == notIntersected.bottomRight.x
+                    && it.atY + it.height == notIntersected.bottomRight.y
+        })
+    }
 }

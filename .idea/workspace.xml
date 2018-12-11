@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cb469bb-8e35-40a2-91aa-2ae33d8a1066" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/inputs/day5/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inputs/day5/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inputs/day5/test2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/day5/day5.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day3/day3.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/day3/day3.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,11 +36,47 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/day3/day3.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="681">
-              <caret line="72" column="46" selection-start-line="72" selection-start-column="46" selection-end-line="72" selection-end-column="46" />
+            <state relative-caret-position="120">
+              <caret line="8" selection-start-line="8" selection-end-line="9" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/day5/day5.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="50" lean-forward="true" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inputs/day5/test2.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="5" selection-start-column="5" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inputs/day5/test.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="16" selection-start-column="16" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inputs/day5/input.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="50000" selection-start-column="50000" selection-end-column="50000" />
             </state>
           </provider>
         </entry>
@@ -56,10 +96,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="Kotlin File" />
         <option value="Kotlin Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>input</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -84,6 +129,10 @@
         <option value="$PROJECT_DIR$/inputs/day4/test.txt" />
         <option value="$PROJECT_DIR$/src/utils/SparseArray.kt" />
         <option value="$PROJECT_DIR$/src/day3/day3.kt" />
+        <option value="$PROJECT_DIR$/inputs/day5/test.txt" />
+        <option value="$PROJECT_DIR$/inputs/day5/input.txt" />
+        <option value="$PROJECT_DIR$/inputs/day5/test2.txt" />
+        <option value="$PROJECT_DIR$/src/day5/day5.kt" />
       </list>
     </option>
   </component>
@@ -121,6 +170,12 @@
               <item name="AdventOfCode2018" type="462c0819:PsiDirectoryNode" />
               <item name="inputs" type="462c0819:PsiDirectoryNode" />
               <item name="day3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AdventOfCode2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AdventOfCode2018" type="462c0819:PsiDirectoryNode" />
+              <item name="inputs" type="462c0819:PsiDirectoryNode" />
+              <item name="day5" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AdventOfCode2018" type="b2602c69:ProjectViewProjectNode" />
@@ -170,7 +225,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.SQL" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -191,7 +246,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.Day3">
+  <component name="RunManager" selected="Kotlin.Day5">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -249,6 +304,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day5" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="AdventOfCode2018" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="day5.Day5Kt" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/inputs/day5" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG">
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <properties />
@@ -270,6 +338,7 @@
       <item itemvalue="Kotlin.Day1" />
       <item itemvalue="Kotlin.Day2" />
       <item itemvalue="Kotlin.Day3" />
+      <item itemvalue="Kotlin.Day5" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -286,7 +355,7 @@
       <workItem from="1543786052380" duration="8779000" />
       <workItem from="1543869538907" duration="936000" />
       <workItem from="1544016156328" duration="11206000" />
-      <workItem from="1544384956192" duration="226000" />
+      <workItem from="1544384956192" duration="4323000" />
     </task>
     <task id="LOCAL-00001" summary="Day ! Parts 1 and 2">
       <created>1543680458221</created>
@@ -316,14 +385,22 @@
       <option name="project" value="LOCAL" />
       <updated>1544016254706</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Work on Day 3 part 3">
+      <created>1544385216077</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1544385216078</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36081000" />
+    <option name="totallyTimeSpent" value="40170000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26065302" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -404,7 +481,8 @@
     <MESSAGE value="Day 1 Part 1" />
     <MESSAGE value="More work on Day 3" />
     <MESSAGE value="Day 4 structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Day 4 structure" />
+    <MESSAGE value="Work on Day 3 part 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Work on Day 3 part 3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -417,6 +495,26 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JetRunConfigurationType">
+        <watch expression="list.joinToString(&quot;&quot;)" language="kotlin" />
+        <watch expression="nextLlist.joinToString(&quot;&quot;)" language="kotlin" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>nextLlist.joinToString(&quot;&quot;)</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>list.joinToString(&quot;&quot;)</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-sources.jar!/common/generated/_Collections.kt">
@@ -533,8 +631,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/day3/day3.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="681">
-          <caret line="72" column="46" selection-start-line="72" selection-start-column="46" selection-end-line="72" selection-end-column="46" />
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="9" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inputs/day5/input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="50000" selection-start-column="50000" selection-end-column="50000" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inputs/day5/test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inputs/day5/test2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/day5/day5.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="50" lean-forward="true" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
         </state>
       </provider>
     </entry>
